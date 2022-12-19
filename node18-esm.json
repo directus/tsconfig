@@ -22,9 +22,6 @@
 		"noUnusedParameters": true,
 		"importsNotUsedAsValues": "error",
 		"checkJs": true,
-		"outDir": "../../../dist",
 		"allowSyntheticDefaultImports": true
-	},
-	"include": ["../../../src"],
-	"exclude": ["../../../node_modules", "../../../dist"]
+	}
 }
