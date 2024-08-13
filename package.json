@@ -1,20 +1,50 @@
 {
 	"name": "@directus/tsconfig",
 	"version": "2.0.0",
+	"packageManager": "pnpm@9.15.0",
 	"description": "TSConfig files used in Directus projects",
+	"author": {
+		"name": "Monospace Inc",
+		"email": "info@monospace.io",
+		"url": "https://monospace.io"
+	},
+	"license": "MIT",
+	"funding": "https://github.com/directus/directus?sponsor=1",
 	"homepage": "https://directus.io",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/directus/directus.git",
-		"directory": "packages/tsconfig"
+		"url": "git+https://github.com/directus/tsconfig.git"
 	},
-	"funding": "https://github.com/directus/directus?sponsor=1",
-	"license": "MIT",
-	"author": "Rijk van Zanten <rijkvanzanten@me.com>",
 	"exports": {
-		"./base": "./base/tsconfig.json",
-		"./node18-cjs": "./node18-cjs/tsconfig.json",
-		"./node18-esm": "./node18-esm/tsconfig.json",
-		"./vue3": "./vue3/tsconfig.json"
+		"./base": "./configs/base/tsconfig.json",
+		"./node22": "./configs/node22/tsconfig.json",
+		"./vue3": "./configs/vue3/tsconfig.json",
+		"./package.json": "./package.json"
+	},
+	"engines": {
+		"pnpm": "9"
+	},
+	"maintainers": [
+		{
+			"name": "Rijk van Zanten",
+			"email": "rijkvanzanten@me.com",
+			"url": "https://github.com/rijkvanzanten"
+		},
+		{
+			"name": "Pascal Jufer",
+			"email": "pascal@directus.io",
+			"url": "https://github.com/paescuj"
+		}
+	],
+	"scripts": {
+		"lint": "eslint .",
+		"test": "node test.mjs"
+	},
+	"devDependencies": {
+		"@directus/eslint-config": "link:../eslint-config",
+		"eslint": "9.16.0",
+		"tinyrainbow": "1.2.0",
+		"tsconfck": "3.1.4",
+		"typescript": "5.7.2"
 	}
 }
