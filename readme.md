@@ -21,3 +21,8 @@ To use one of the shared config, extend the local `tsconfig.json` from it:
 	"extends": "@directus/tsconfig/node22"
 }
 ```
+
+## Additional Resources
+
+- [Directus Website](https://directus.io)
+- [Directus GitHub Repository](https://github.com/directus/directus)
