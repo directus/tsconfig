@@ -2,12 +2,10 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Base",
 	"compilerOptions": {
+		"checkJs": true,
 		"strict": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"allowUnusedLabels": false,
 		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
 		"exactOptionalPropertyTypes": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
@@ -16,8 +14,10 @@
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"checkJs": true,
+		"declaration": true,
 		"allowSyntheticDefaultImports": true,
-		"declaration": true
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
 	}
 }
