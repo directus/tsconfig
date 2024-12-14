@@ -8,9 +8,6 @@ on:
         required: true
         type: string
 
-permissions:
-  contents: write
-
 jobs:
   check-version:
     name: Check Version
@@ -28,8 +25,10 @@ jobs:
 
   create-version:
     name: Create Version
-    runs-on: ubuntu-latest
     needs: check-version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -42,7 +41,7 @@ jobs:
 
       - name: Create version commit & tag
         run: |
-          author='${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>'
+          author='${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>'
           version='v${{ needs.check-version.outputs.version }}'
           branch='${{ github.ref }}'
 
@@ -53,14 +52,16 @@ jobs:
 
           git tag --annotate "$version" --message "$version"
 
-          git push --atomic origin "$branch" "$version"
+          git push --atomic origin "$branch" "refs/tags/${version}"
 
   create-release:
     name: Create Release
-    runs-on: ubuntu-latest
     needs:
       - check-version
       - create-version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -77,10 +78,10 @@ jobs:
 
   publish-npm:
     name: Publish to NPM
-    runs-on: ubuntu-latest
     needs:
       - check-version
       - create-version
+    runs-on: ubuntu-latest
     permissions:
       id-token: write
     steps:
