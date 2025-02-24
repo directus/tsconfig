@@ -1,3 +1,1 @@
-import directusConfig from '@directus/eslint-config';
-
-export default directusConfig();
+export { default } from '@directus/eslint-config';
