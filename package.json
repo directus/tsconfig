@@ -37,7 +37,7 @@
 		}
 	],
 	"scripts": {
-		"lint": "eslint .",
+		"lint": "eslint",
 		"test": "node test.mjs"
 	},
 	"devDependencies": {
