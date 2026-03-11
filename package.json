@@ -1,6 +1,6 @@
 {
 	"name": "@directus/tsconfig",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"packageManager": "pnpm@10.4.1",
 	"description": "TSConfig files used in Directus projects",
 	"author": {
