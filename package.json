@@ -18,11 +18,12 @@
 	"exports": {
 		"./base": "./configs/base/tsconfig.json",
 		"./node22": "./configs/node22/tsconfig.json",
+		"./node26": "./configs/node26/tsconfig.json",
 		"./vue3": "./configs/vue3/tsconfig.json",
 		"./package.json": "./package.json"
 	},
 	"engines": {
-		"pnpm": "10"
+		"pnpm": ">=10"
 	},
 	"maintainers": [
 		{
