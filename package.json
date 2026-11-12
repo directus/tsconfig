@@ -46,6 +46,6 @@
 		"eslint": "9.21.0",
 		"tinyrainbow": "2.0.0",
 		"tsconfck": "3.1.5",
-		"typescript": "5.7.3"
+		"typescript": "6.0.3"
 	}
 }
