@@ -15,7 +15,7 @@
 		"jsxImportSource": "vue",
 
 		// Add DOM definitions.
-		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"lib": ["ES2022", "DOM"],
 
 		// It's recommended to author and ship in ES modules.
 		// This recommendation includes environments like Vitest, Vite Config File, Vite SSR, etc.
@@ -23,7 +23,6 @@
 
 		// Enable some resolution features that are only available in bundlers.
 		"moduleResolution": "bundler",
-		"resolveJsonModule": true,
 
 		// Any imports or exports without a type modifier are left around. This is important for `<script setup>`.
 		// Anything that uses the type modifier is dropped entirely.
