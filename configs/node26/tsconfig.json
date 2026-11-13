@@ -3,11 +3,10 @@
 	"display": "Node.js 26",
 	"extends": "../base/tsconfig.json",
 	"compilerOptions": {
-		"target": "ES2024",
-		"lib": ["ES2024"],
-		"module": "Node16",
-		"moduleResolution": "Node16",
-		"allowJs": false,
+		"target": "ES2025",
+		"lib": ["ES2025"],
+		"module": "Node20",
+		"types": ["node"],
 		"checkJs": false,
 		"isolatedDeclarations": true,
 		"verbatimModuleSyntax": true

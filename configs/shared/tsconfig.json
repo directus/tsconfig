@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Shared",
+	"extends": "../base/tsconfig.json",
+	"compilerOptions": {
+		// Code that also runs in browsers, so stay below what Node.js 26 supports.
+		// Add "DOM" to `lib` for code that only runs in browsers.
+		"target": "ES2022",
+		"lib": ["ES2023"],
+		"module": "Node20",
+
+		// Don't expose Node.js globals.
+		"types": [],
+
+		"checkJs": false,
+		"isolatedDeclarations": true,
+		"verbatimModuleSyntax": true
+	}
+}

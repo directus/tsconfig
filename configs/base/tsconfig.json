@@ -3,7 +3,6 @@
 	"display": "Base",
 	"compilerOptions": {
 		"checkJs": true,
-		"strict": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"exactOptionalPropertyTypes": true,
@@ -15,9 +14,6 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"declaration": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true
 	}
 }
