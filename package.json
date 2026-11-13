@@ -19,6 +19,7 @@
 		"./base": "./configs/base/tsconfig.json",
 		"./node22": "./configs/node22/tsconfig.json",
 		"./node26": "./configs/node26/tsconfig.json",
+		"./shared": "./configs/shared/tsconfig.json",
 		"./vue3": "./configs/vue3/tsconfig.json",
 		"./package.json": "./package.json"
 	},

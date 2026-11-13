@@ -6,6 +6,7 @@
 		"target": "ES2025",
 		"lib": ["ES2025"],
 		"module": "Node20",
+		"types": ["node"],
 		"checkJs": false,
 		"isolatedDeclarations": true,
 		"verbatimModuleSyntax": true

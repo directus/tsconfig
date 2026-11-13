@@ -6,6 +6,7 @@ The following configs are available:
 
 - [`node26`](./configs/node26/tsconfig.json) - Config for Node.js 26 modules
 - [`node22`](./configs/node22/tsconfig.json) - Config for Node.js 22 modules
+- [`shared`](./configs/shared/tsconfig.json) - Config for modules that run in both Node.js and browsers
 - [`vue3`](./configs/vue3/tsconfig.json) - Config for Vue.js 3 modules
 - [`base`](./configs/base/tsconfig.json) - Set of basic rules (included in all of the configs above)
 
