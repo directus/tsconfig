@@ -3,6 +3,7 @@
 	"display": "Base",
 	"compilerOptions": {
 		"checkJs": true,
+		"strict": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"exactOptionalPropertyTypes": true,

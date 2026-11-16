@@ -15,7 +15,7 @@
 		"jsxImportSource": "vue",
 
 		// Add DOM definitions.
-		"lib": ["ES2022", "DOM"],
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
 
 		// It's recommended to author and ship in ES modules.
 		// This recommendation includes environments like Vitest, Vite Config File, Vite SSR, etc.
