@@ -15,9 +15,6 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"declaration": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true
 	}
 }

@@ -19,6 +19,7 @@
 		"./base": "./configs/base/tsconfig.json",
 		"./node22": "./configs/node22/tsconfig.json",
 		"./node26": "./configs/node26/tsconfig.json",
+		"./shared": "./configs/shared/tsconfig.json",
 		"./vue3": "./configs/vue3/tsconfig.json",
 		"./package.json": "./package.json"
 	},
@@ -46,6 +47,6 @@
 		"eslint": "9.21.0",
 		"tinyrainbow": "2.0.0",
 		"tsconfck": "3.1.5",
-		"typescript": "5.7.3"
+		"typescript": "6.0.3"
 	}
 }
