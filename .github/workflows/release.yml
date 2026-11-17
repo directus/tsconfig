@@ -95,12 +95,14 @@ jobs:
         with:
           registry: https://registry.npmjs.org
 
+      # Trusted publishing (OIDC) requires npm >= 11.5.1
+      - name: Update npm
+        run: npm install --global npm@11
+
+      # Authenticates via OIDC as a trusted publisher configured on npmjs.com,
+      # provenance is generated automatically
       - name: Publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
         run: |
-          pnpm publish \
+          npm publish \
             --access=public \
-            --no-git-checks \
             --tag ${{ needs.check-version.outputs.is-prerelease == 'true' && 'canary'  || 'latest' }}
